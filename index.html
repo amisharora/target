@@ -9,39 +9,8 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/mobile.css">
 	<script type='text/javascript' src='js/mobile.js'></script>
-	<script>
-		
-		;(function(win, doc, style, timeout) {
-    var STYLE_ID = 'at-body-style';
-    function getParent() {
-      return doc.getElementsByTagName('head')[0];
-    }
-    function addStyle(parent, id, def) {
-      if (!parent) {
-        return;
-      }
-      var style = doc.createElement('style');
-      style.id = id;
-      style.innerHTML = def;
-      parent.appendChild(style);
-    }
-    function removeStyle(parent, id) {
-      if (!parent) {
-        return;
-      }
-      var style = doc.getElementById(id);
-      if (!style) {
-        return;
-      }
-      parent.removeChild(style);
-    }
-    addStyle(getParent(), STYLE_ID, style);
-    setTimeout(function() {
-      removeStyle(getParent(), STYLE_ID);
-    }, timeout);
-  }(window, document, "body {opacity: 0 !important}", 3000));
-	</script>
-	<script src="//assets.adobedtm.com/50a0cd88cb00/c9d0ff552df3/launch-dcb14ad759af-development.min.js" async></script>
+	
+	<script src="//assets.adobedtm.com/50a0cd88cb00/c9d0ff552df3/launch-dcb14ad759af-development.min.js"></script>
 </head>
 <body>
 		
@@ -93,5 +62,6 @@
 			<a href="https://freewebsitetemplates.com/go/pinterest/" id="pinterest" target="_blank">Pinterest</a>
 		</div>
 	</div>
+	<script type="text/javascript">_satellite.pageBottom();</script>
 </body>
 </html>
